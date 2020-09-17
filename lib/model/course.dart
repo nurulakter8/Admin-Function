@@ -17,13 +17,13 @@ var courseList = [
     number: 'CMSC 1613',
     title: 'Programming I',
     prereq: 'CMSC 1513',
-    imageUrl: 'https://m.media-amazon.com/images/I/51Z-XJXiQnL._AC_UL320_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/41iNYFT2syL._AC_UL320_.jpg',
   ),
   Course(
     number: 'CMSC 2613',
     title: 'Programming II',
     prereq: 'CMSC 1613',
-    imageUrl: 'https://m.media-amazon.com/images/I/416cBuHy+ZL._AC_UL320_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61O3ETDDNEL._AC_UL320_.jpg',
   ),
   Course(
     number: 'CMSC 3613',
@@ -41,6 +41,6 @@ var courseList = [
     number: 'CMSC 4513',
     title: 'Software Design & Development',
     prereq: 'CMSC 4323',
-    imageUrl: 'https://m.media-amazon.com/images/I/713o0wK9yYL._AC_UL320_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/51837I6FOCL._AC_UL320_.jpg',
   ),
 ];
