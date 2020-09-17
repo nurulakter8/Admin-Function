@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lesson2/screens/counterdemo_screen.dart';
 import 'package:lesson2/screens/listdemo_screen.dart';
 import 'package:lesson2/screens/start_screen.dart';
+import 'package:lesson2/screens/tapoplist_screen.dart';
 import 'package:lesson2/screens/widgetlifecycle.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class Lesson2App extends StatelessWidget {
         CounterDemoScreen.routeName: (context) => CounterDemoScreen(),
         WidgetLifeCycle.routeName: (context) => WidgetLifeCycle(),
         ListDemoScreen.routeName: (context) => ListDemoScreen(),
+        TapOnListScreen.routeName: (context) => TapOnListScreen(),
       },
     );
   }
