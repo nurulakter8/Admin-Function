@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lesson2/screens/profile_screen.dart';
 import 'package:lesson2/screens/tapoplist_screen.dart';
 import 'package:lesson2/screens/widgetlifecycle.dart';
 
@@ -42,6 +43,11 @@ class StartScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, FormDemoScreen.routeName),
               child: Text('Form Demo'),
+            ),
+             RaisedButton(
+              onPressed: () =>
+                  Navigator.pushNamed(context, ProfileScreen.routeName),
+              child: Text('Profile Edit Demo'),
             ),
           ],
         ),

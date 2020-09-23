@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lesson2/screens/counterdemo_screen.dart';
 import 'package:lesson2/screens/formdemo_screen.dart';
 import 'package:lesson2/screens/listdemo_screen.dart';
+import 'package:lesson2/screens/profile_screen.dart';
+import 'package:lesson2/screens/profileedit_screen.dart';
 import 'package:lesson2/screens/start_screen.dart';
 import 'package:lesson2/screens/tapoplist_screen.dart';
 import 'package:lesson2/screens/userhome_screen.dart';
@@ -24,6 +26,8 @@ class Lesson2App extends StatelessWidget {
         TapOnListScreen.routeName: (context) => TapOnListScreen(),
         FormDemoScreen.routeName: (context) => FormDemoScreen(),
         UserHomeScreen.routeName: (context) => UserHomeScreen(),
+        ProfileScreen.routeName: (context) => ProfileScreen(),
+        ProfileEditScreen.routeName: (context) => ProfileEditScreen(),
       },
     );
   }
