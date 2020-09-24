@@ -20,6 +20,8 @@ class _ProfileState extends State<ProfileScreen> {
     con = _Controller(this);
   }
 
+  void render(fn) => setState(fn);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,7 +105,13 @@ class _Controller {
   Profile profile = Profile();
   _Controller(this._state);
 
-  void edit(){
-    Navigator.pushNamed(_state.context, ProfileEditScreen.routeName, arguments: profile);
+  void edit() async {
+    var result = await Navigator.pushNamed(
+        _state.context, ProfileEditScreen.routeName,
+        arguments: Profile.clone(profile));
+    if (result != null) {
+      //save button pressed from edit profile screen
+      _state.render(()=>profile = result);
+    }
   }
 }

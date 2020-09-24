@@ -1,7 +1,6 @@
-import 'dart:ui';
 
 enum Classification{
-  Freshmem,
+  Freshmen,
   Sophomore, 
   Junior,
   Senior,
@@ -32,8 +31,15 @@ class Profile{
   Profile({
     this.name="",
     this.age=0,
-    this.classification = Classification.Freshmem,
+    this.classification = Classification.Freshmen,
     this.major = Major.CS,
   });
+  Profile.clone(Profile p){
+    this.name=p.name;
+    this.age=p.age;
+    this.classification = p.classification;
+    this.major = p.major;
+    this.languages= Map.from(p.languages);
+  }
 
 }
